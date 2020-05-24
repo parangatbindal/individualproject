@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <title>form submission</title>
+        <link type="text/css" href="registrationform.css" rel="stylesheet">
+        <script type="text/javascript" src="registration form.js"></script>
+    </head>
+    <body>
+        <div id="maindiv">
+        <div id="divheading">
+            <h1>Registration Form</h1><hr>
+        </div>
+        
+            <div id="error_message">
+
+            </div>
+            <form  action="registration form.php" id="myform" method="post" onsubmit="return validate()">
+      <div class="input">
+           <b >First Name:</b><br>
+        <input type="text" id="first name" name="fname" style="width:60%;font-Size:15px; border:0.8px solid black;" placeholder="Enter name" ><br><br>
+      </div>
+      <div class="input">
+          <b>Last Name:</b><br> 
+        <input type="text" id="last name"name="lname" placeholder="Enter name"style="width:60%;font-Size:15px;border:0.8px solid black;" ><br><br>
+      </div>
+      <div class="input">
+          <b>Email:</b><br>
+        <input type="text" id="email"name="email" placeholder="Enter email-id"style="width:60%;font-Size:15px;border:0.8px solid black;"><br><br>
+      </div>
+      <div class ="input">
+          <b>University Name:</b><br>
+        <input type="text" id="uni name"name="uname" placeholder="Enter Uni name"style="width:60%;font-Size:15px;border:0.8px solid black;"><br><br>
+      </div>
+      <div class="input">
+          <b>Gender:</b><br>
+       <input type="radio" name="gender"id="male" value="male">Male
+       <input type="radio" id="female" value="female" name="gender">Female<br><br>
+      </div>
+      <div class="input">
+          <b>Date Of Birth:</b><br>
+        <input type="text" id="dob"name="dob" placeholder="dd-mm-yyyy"style="width:15%%;font-Size:15px;border:0.8px solid black;"><br><br>
+      </div>
+      <div class="input">
+         <b>Address:</b><br>
+      <input type="text" id="address"name="address" placeholder="Enter address"style="width:60%;font-Size:15px;border:0.8px solid black;"><br><br>
+      </div>
+      <div class="input">
+      <b>Phone Number:</b><br>
+        <input type="number" placeholder="Enter number" id="number" name="number" style="font-Size:15px;border:0.8px solid black;"><br><br>
+      </div>
+
+      <div class="input">
+        <b>District</b>
+          <select name="city">
+              <option>Agra</option>
+              <option>Raibareli</option>
+              <option>Jaipur</option>
+              <option>Sonepat</option>
+              <option>Lucknow</option>
+            </select>
+               <b>State</b>      
+                <select name="state">
+                    <option>Uttar Pradesh</option>
+                    <option>Rajasthan</option>
+                    <option>Uttarakhand</option>
+                    <option>Maharashtra</option>
+                    <option>Madhya Pradesh</option>
+                </select>
+        
+                  <b>Country</b>
+                    <select name="Country">
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>Bhutan</option>
+                        <option>Australia</option>
+                        <option>China</option>
+                    </select>
+                
+            
+      </div><br><br>
+      <div class="input">
+        <input type="submit" id="btn"style="width:60%;font-Size:20px;border:0.8px solid black;" value="Submit">
+      </div>
+    </div>
+        </form>
+        </div>
+    </body>
+</html>
